@@ -2,10 +2,10 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row justify-content-center justify-content-sm-start">
+    <div class="row justify-content-around justify-content-sm-start">
         {% for product in products %}
-        <div class="card mb-3 col-xs-12 col-sm-6 col-lg-4">
-            <div class="row no-gutters">
+        <div class="card mb-3 col-xs-12 col-sm-6 col-lg-4" style="width: 27rem;">
+            <div class="row">
               <div class="col-md-4">
                 <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img" alt="One Piece manga volume cover image">
               </div>
