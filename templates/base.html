@@ -25,6 +25,9 @@
 </head>
 
 <body>
+
+    <!-- ************ nav bar start ************* -->
+
     <nav id="navstick" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsenav">
             <span class="navbar-toggler-icon"></span>
@@ -46,6 +49,18 @@
                             In</a></li>
                 {% endif %}
                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'view_cart' %}">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                        {% if product_count > 0 %}
+                        <label class="badge badge-warning">{{ product_count }}</label>
+                        {% endif %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#contactmodal" id="contact"><i
+                            class="fa fa-address-card-o" aria-hidden="true"></i> Contact</a>
+                </li>
+                <li class="nav-item">
                     <form action="{% url 'search' %}" method="get">
                         <div class="input-group mb-3">
                             <input type="text" class="form-control-sm" name="q" placeholder="search" aria-describedby="button-addon2">
@@ -55,17 +70,12 @@
                           </div>
                     </form>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'view_cart' %}">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
-                        {% if product_count > 0 %}
-                        <label class="badge badge-warning">{{ product_count }}</label>
-                        {% endif %}
-                    </a>
-                </li>
             </ul>
         </div>
     </nav>
+
+    <!-- ************ messages start ************* -->
+
     {% if messages %}
     <div class="alert alert-success">
         <div class="messages">
@@ -75,9 +85,27 @@
         </div>
     </div>
     {% endif %}
+
+    <!-- ************ content block start ************* -->
     
     {% block content %}
     {% endblock %}
+
+    <!-- ********** 'contact' modal start ************ -->
+
+    <div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">aabikodali@outlook.com</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <footer>
         <span>© Abhilaash Kodali 2019</span>
