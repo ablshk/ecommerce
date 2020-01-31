@@ -47,12 +47,8 @@
                 {% endif %}
                 <li class="nav-item">
                     <form action="{% url 'search' %}" method="get">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control-sm" name="q" placeholder="search" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                              <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search" aria-hidden="true"></i></button>
-                            </div>
-                          </div>
+                        <input type="text" class="form-control-sm" name="q">
+                        <button type="search" class="btn btn-outline-primary btn-sm"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </form>
                 </li>
                 <li class="nav-item">
