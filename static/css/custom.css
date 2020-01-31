@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bangers|Oswald:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Open+Sans:700&display=swap');
 
 /* body start */
 body {
@@ -81,18 +81,18 @@ footer {
 
 /* forms start */
 #registercontainer {
-    font-family: 'Oswald';
+    font-family: 'Open Sans', sans-serif;
 }
 
 #profilecontainer {
-    font-family: 'Oswald';
+    font-family: 'Open Sans', sans-serif;
 }
 
 #logincontainer {
-    font-family: 'Oswald';
+    font-family: 'Open Sans', sans-serif;
 }
 
 #payment-form {
-    font-family: 'Oswald';
+    font-family: 'Open Sans', sans-serif;
 }
 /* forms end */
