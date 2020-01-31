@@ -63,7 +63,7 @@ This project makes use of the following technologies:
 
 ### Wireframes
 
-Link - 
+Link - [ecommerce/wireframes at master · ablshk/ecommerce · GitHub](https://github.com/ablshk/ecommerce/tree/master/wireframes)
 
 ### Deployment
 
