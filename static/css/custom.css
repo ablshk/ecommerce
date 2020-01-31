@@ -5,16 +5,10 @@ body {
 }
 
 footer {
-    margin-top: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-top: 1px solid #ededed;
-    color: rgb(233, 36, 36);
-}
-
-.icon-bar {
-    background-color: #fff;
-}
+    background-color: rgb(221, 221, 221);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    }
 
 .accountform {
     padding-top: 20px;
@@ -33,39 +27,32 @@ footer {
     background-color: #c67605;
 }
 
-.product {
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-}
-
-caption p {
-    word-wrap: break-word;
-}
-
-.row.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.panel-default {
-    border-color: transparent;
-    padding: 0 10px;
-}
-
-.panel-body {
-    height: 100%;
-    border: 1px solid #ddd;
-}
-
-.product-description {
-    min-height: 40px;
-}
-
 #navstick {
     margin-bottom: 1rem;
+}
+
+#logo:hover {
+    color: rgb(59, 59, 245);
+    background-color: yellow;
+}
+
+#profile:hover {
+    background-color: burlywood;
+    color: yellow;
+    cursor: pointer;
+}
+
+#logout:hover {
+    background-color: rgb(109, 109, 204);
+    color: rgb(255, 112, 112);
+}
+
+#login:hover {
+    background-color: rgb(109, 109, 204);
+    color: rgb(255, 112, 112);
+}
+
+#signup:hover {
+    background-color: rgb(201, 49, 49);
+    color: rgb(201, 197, 201);
 }
