@@ -71,6 +71,11 @@ footer {
     color: indigo;
     cursor: pointer;
 }
+
+#cart:hover {
+    background-color: rgb(201, 49, 49);
+    color: rgb(201, 197, 201);
+}
 /* navbar end */
 
 /* contact modal text start */
