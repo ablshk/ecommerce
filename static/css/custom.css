@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bangers|Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Oswald:700&display=swap');
 
 /* body start */
 body {
@@ -72,3 +72,27 @@ footer {
     cursor: pointer;
 }
 /* navbar end */
+
+/* contact modal text start */
+#exampleModalCenterTitle {
+    font-family: 'Oswald';
+}
+/* contact modal text end */
+
+/* forms start */
+#registercontainer {
+    font-family: 'Oswald';
+}
+
+#profilecontainer {
+    font-family: 'Oswald';
+}
+
+#logincontainer {
+    font-family: 'Oswald';
+}
+
+#payment-form {
+    font-family: 'Oswald';
+}
+/* forms end */
