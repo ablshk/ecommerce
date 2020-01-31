@@ -36,10 +36,8 @@
             </div>
         {% endfor %}
     </div>
-    <div class="row">
-        <p>Total</p>
-        <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span> €{{ total }}</p>
-        <br>
+    <div>
+        <p>Total €{{ total }}</p>
         <br>
         <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Checkout</a>
     </div>
