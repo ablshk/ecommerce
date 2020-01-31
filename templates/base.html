@@ -45,14 +45,14 @@
                     <li class="nav-item"><a href="{% url 'login' %}" class="nav-link"><i class="fa fa-sign-in"></i> Log
                             In</a></li>
                 {% endif %}
-                <li>
+                <li class="nav-item">
                     <form action="{% url 'search' %}" method="get">
                         <input type="text" name="q">
                         <button type="search">Search</button>
                     </form>
                 </li>
-                <li>
-                    <a href="{% url 'view_cart' %}">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'view_cart' %}">
                         <i class="fa fa-shipping-cart"></i> Cart
                         {% if product_count > 0 %}
                         <label class="badge badge-warning">{{ product_count }}</label>
